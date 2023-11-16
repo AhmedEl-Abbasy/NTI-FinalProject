@@ -45,8 +45,8 @@
 /*******************************************************************************
  *                      Global Function Prototypes                             *
  *******************************************************************************/
-void SCB_SetPriorityGroup(u32 PriorityGroup);
-u32 SCB_GetPriorityGroup(void);
+STD_ReturnState SCB_SetPriorityGroup(u32 PriorityGroup);
+STD_ReturnState SCB_GetPriorityGroup(u32 *GetPriorityVal);
 
 /*******************************************************************************
  *                      End of File: SCB.h                                        *

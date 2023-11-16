@@ -56,8 +56,9 @@
 * Parameters () :
 * Return value:   : *
 *******************************************************************************/
-void SCB_SetPriorityGroup(u32 PriorityGroup)
+STD_ReturnState SCB_SetPriorityGroup(u32 PriorityGroup)
 {
+	STD_ReturnState Ret_Val = RET_NOK;
 	u32 RegisterValue =0;
 	u32 PriorityGroup_val= (u32)PriorityGroup &(u32)0x07;
 
@@ -68,6 +69,8 @@ void SCB_SetPriorityGroup(u32 PriorityGroup)
 			| ((u32)PriorityGroup_val << SCB_AIRCR_PRIGROUP_pos));
 
 	SCB_AIRCR = RegisterValue;
+	Ret_Val = RET_OK;
+	return Ret_Val;
 }
 /******************************************************************************
 * Syntax          :
@@ -78,9 +81,19 @@ void SCB_SetPriorityGroup(u32 PriorityGroup)
 * Parameters () :
 * Return value:   : *
 *******************************************************************************/
-u32 SCB_GetPriorityGroup()
+STD_ReturnState SCB_GetPriorityGroup(u32 *GetPriorityVal)
 {
-	return ((SCB_AIRCR & (u32)SCB_AIRCR_PRIGROUP_msk) >>SCB_AIRCR_PRIGROUP_pos);
+	STD_ReturnState Ret_Val = RET_NOK;
+	if(GetPriorityVal != NULL)
+	{
+		*GetPriorityVal =((SCB_AIRCR & (u32)SCB_AIRCR_PRIGROUP_msk) >>SCB_AIRCR_PRIGROUP_pos);
+		Ret_Val = RET_OK;
+	}
+	else
+	{
+		Ret_Val =RET_NULLPTR;
+	}
+	return Ret_Val;
 }
 /*******************************************************************************
  *                      End of File: NVIC.c                                        *
