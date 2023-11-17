@@ -151,8 +151,7 @@
             /* ADC interrupt and status register */
 #define ADC2_ISR_REG 			(*(volatile u32*) (ADC1_BASE_ADDR + ADC1_ISR_REG_OFFSET + ADC2_BASE_OFFSET))
 
-//#define EOC_BIT_2           (2u)        // End of conversion flag
-//#define ADRDY_BIT_0         (0u)       // ADC ready
+
 
 
 
@@ -160,40 +159,22 @@
             /* ADC interrupt enable register */
 #define ADC2_IER_REG 			(*(volatile u32*) (ADC1_BASE_ADDR + ADC1_IER_REG_OFFSET + ADC2_BASE_OFFSET ))
 
-//#define EOCIE_BIT_2               (2u)   //End of regular conversion interrupt enable
-//#define ADRDYIE_BIT_0             (0u)   //ADC ready interrupt enable
+
 
             /* ADC control register */
 #define ADC2_CR_REG 			(*(volatile u32*) (ADC1_BASE_ADDR + ADC1_CR_REG_OFFSET + ADC2_BASE_OFFSET ))
 
-//#define ADSTART_BIT_2     (2u) //ADC start of regular conversion
-//#define ADEN_BIT_0        (0u) //ADC enable control
+
 
             /* ADC configuration register */
 #define ADC2_CFGR_REG 			(*(volatile u32*) (ADC1_BASE_ADDR + ADC1_CFGR_REG_OFFSET + ADC2_BASE_OFFSET ))
 
-//#define CONT_BIT_13        (13u)      //Single / continuous conversion mode for regular conversions
-//#define OVRMOD_BIT12       (12u)      //Overrun Mode This bit is set and cleared by software and configure the way data overrun is managed
-//#define EXTEN_BIT_10_11    (10u)      //bits 10 & 11 are for External trigger enable and polarity selection for regular channels
-//#define ALIGN_BIT_5        (5u)      //Data alignment
-//#define RES_BIT_3_4        (3u)      // Data resolution
 
             /* ADC sample time register */
 #define ADC2_SMPR1_REG			(*(volatile u32*) (ADC1_BASE_ADDR + ADC1_SMPR1_REG_OFFSET + ADC2_BASE_OFFSET ))
 #define ADC2_SMPR2_REG			(*(volatile u32*) (ADC1_BASE_ADDR + ADC1_SMPR2_REG_OFFSET + ADC2_BASE_OFFSET ))
 
-// 3 bits for evech Channel for sampling time selection
-//#define SMP1_BIT_3_4_5          (3u)
-//#define SMP2_BIT_6_7_8          (6u)
-//#define SMP3_BIT_9_10_11        (9u)
-//#define SMP4_BIT_12_13_14       (12u)
-//#define SMP5_BIT_15_16_17       (15u)
-//#define SMP6_BIT_18_19_20       (18u)
-//#define SMP7_BIT_21_22_23       (21u)
-//#define SMP8_BIT_24_25_26       (24u)
-//#define SMP9_BIT_27_28_29       (27u)
-//#define SMP10_BIT_0_1_2         (0u)
-//#define SMP11_BIT_3_4_5         (3u)
+
 
 
 
@@ -260,37 +241,13 @@
 /* ADC3 configuration register */
 #define ADC3_CFGR_REG           (*(volatile u32*)(ADC3_BASE_ADDR + ADC3_CFGR_REG_OFFSET + ADC3_BASE_OFFSET))
 
-//#define DISCEN_BIT_16           (16u)    // Discontinuous mode for regular channels
-//#define CONT_BIT_13             (13u)    // Single / continuous conversion mode for regular conversions
-//#define OVRMOD_BIT12            (12u)    // Overrun Mode: Set and cleared by software to configure the way data overrun is managed
-//#define EXTEN_BIT_10_11         (10u)    // External trigger enable and polarity selection for regular channels (bits 10 & 11)
-//#define ALIGN_BIT_5             (5u)     // Data alignment
-//#define RES_BIT_3_4             (3u)     // Data resolution
+
 
 /* ADC3 sample time registers */
 #define ADC3_SMPR1_REG          (*(volatile u32*)(ADC3_BASE_ADDR + ADC3_SMPR1_REG_OFFSET + ADC3_BASE_OFFSET))
 #define ADC3_SMPR2_REG          (*(volatile u32*)(ADC3_BASE_ADDR + ADC3_SMPR2_REG_OFFSET + ADC3_BASE_OFFSET))
 
-// 3 bits for each Channel for sampling time selection
-//#define SMP1_BIT_3_4_5          (3u)     // Channel 1
-//#define SMP2_BIT_6_7_8          (6u)     // Channel 2
-//#define SMP3_BIT_9_10_11        (9u)     // Channel 3
-//#define SMP4_BIT_12_13_14       (12u)    // Channel 4
-//#define SMP5_BIT_15_16_17       (15u)    // Channel 5
-//#define SMP6_BIT_18_19_20       (18u)    // Channel 6
-//#define SMP7_BIT_21_22_23       (21u)    // Channel 7
-//#define SMP8_BIT_24_25_26       (24u)    // Channel 8
-//#define SMP9_BIT_27_28_29       (27u)    // Channel 9
 
-/* ADC3_SMPR2_REG */
-//#define SMP10_BIT_0_1_2         (0u)     // Channel 10
-//#define SMP11_BIT_3_4_5         (3u)     // Channel 12
-//#define SMP11_BIT_6_7_8         (6u)     // Channel 13
-//#define SMP11_BIT_9_10_11       (9u)     // Channel 14
-//#define SMP11_BIT_12_13_14      (12u)    // Channel 15
-//#define SMP11_BIT_15_16_17      (15u)    // Channel 16
-//#define SMP11_BIT_18_19_30      (18u)    // Channel 17
-//#define SMP11_BIT_21_22_23      (21u)    // Channel 18
 
 /* ADC3 regular sequence register */
 #define ADC3_SQR1_REG           (*(volatile u32*)(ADC3_BASE_ADDR + ADC3_SQR1_REG_OFFSET + ADC3_BASE_OFFSET))
@@ -352,8 +309,7 @@
 /*                             ADC regular Data Register                             */
 #define ADC4_DR_REG 			(*(volatile u32*) (ADC3_BASE_ADDR + ADC3_DR_REG_OFFSET + ADC4_BASE_OFFSET ))
 
-//#define CKMODE_BIT_16_17             16 // ADC clock mode
-//#define DUAL_BIT_0_1_2_3_4           0 // Dual ADC mode selection
+
 
 
 /*******************************************************************************

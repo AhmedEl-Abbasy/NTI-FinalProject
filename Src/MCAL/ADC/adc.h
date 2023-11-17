@@ -45,19 +45,19 @@
  *******************************************************************************/
 
 //  abdullah
-void ADC1_Init(ADC1_Channel_t channel);
-void ADC2_Init(ADC2_Channel_t channel);
+void ADC1_Init(ADC_Channel_t channel);
+void ADC2_Init(ADC_Channel_t channel);
 
 // youmna
-void ADC3_Init(ADC3_Channel_t channel);
-void ADC4_Init(ADC4_Channel_t channel);
+void ADC3_Init(ADC_Channel_t channel);
+void ADC4_Init(ADC_Channel_t channel);
 
 
 
 STD_ReturnState ADC_CheckStatus(ADC_t adc, ADC_Status_t Status); 
 void ADC_Enable(ADC_t adc);
 
-u16  ADC_Read(ADC_t adc);
+void  ADC_Read(ADC_t adc , u16 *Read_Ptr);
 void ADC_Disable(ADC_t adc);
 
 
