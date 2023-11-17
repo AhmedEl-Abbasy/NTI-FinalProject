@@ -113,7 +113,7 @@ void ADC2_Init(ADC_Channel_t channel)
        ADC2_SMPR2_REG  |=  WriteValue(2 , ( SMP10_BIT_0_1_2 * (channel - 10 ) ) );
     }
     //  1 conversion
-    ADC2_SQR1_REG  = 0x00000000;
+    ADC2_SQR1_REG  = 0x000011111;
     ADC2_SQR1_REG  |= WriteValue(0 , L_BIT_0_1_2_3 );
   /* DC common control register */
     ADC1_CCR_REG |= WriteValue(0 , DUAL_BIT_0_1_2_3_4 );  // Independent mode
