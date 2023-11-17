@@ -7,7 +7,7 @@
  *
  * Created: 10/20/2023 10:06:10 AM
  *
- * Author: 
+ * Author: Elkady Ahmed
  *
  *******************************************************************************/
 #ifndef STD_TYPES_H
@@ -37,7 +37,7 @@ typedef unsigned char u8;
 typedef signed char s8;
 
 typedef unsigned short int  u16;
-typedef signed short int s16;
+typedef signed int short s16;
 
 typedef unsigned long int  u32;
 typedef signed long int s32;
