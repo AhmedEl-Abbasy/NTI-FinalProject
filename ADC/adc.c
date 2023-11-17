@@ -57,7 +57,7 @@
 * Return value:         : void
 *
 ***************************************************************************************************************/
-void ADC1_Init(ADC1_Channel_t channel)
+void ADC1_Init(ADC_Channel_t channel)
 {
     ADC1_CR_REG   = 0x00000000;
     //  12-bit Resolution , Single conversion mode ,  Right alignment
@@ -95,7 +95,7 @@ void ADC1_Init(ADC1_Channel_t channel)
 * Return value:         : void
 *
 ***************************************************************************************************************/
-void ADC2_Init(ADC2_Channel_t channel)
+void ADC2_Init(ADC_Channel_t channel)
 {
     ADC2_CR_REG   = 0x00000000;
     //  12-bit Resolution , Single conversion mode ,  Right alignment
@@ -134,7 +134,7 @@ void ADC2_Init(ADC2_Channel_t channel)
 * Return value:         : void
 *
 ***************************************************************************************************************/
-void ADC3_Init(ADC3_Channel_t channel)
+void ADC3_Init(ADC_Channel_t channel)
 {
     ADC3_CR_REG   = 0x00000000;
     //  12-bit Resolution, Single conversion mode, Right alignment
@@ -169,7 +169,7 @@ void ADC3_Init(ADC3_Channel_t channel)
 * Return value:         : void
 *
 ******************************************************************************************************************/
-void ADC4_Init(ADC4_Channel_t channel)
+void ADC4_Init(ADC_Channel_t channel)
 {
     ADC4_CR_REG   = 0x00000000;
     //  12-bit Resolution, Single conversion mode, Right alignment
@@ -190,8 +190,8 @@ void ADC4_Init(ADC4_Channel_t channel)
     ADC4_SQR1_REG  = 0x00000000;
     ADC4_SQR1_REG  |= WriteValue(0x00, L_BIT_0_1_2_3);
     /* DC common control register */
-    ADC4_CCR_REG |= WriteValue(0x00, DUAL_BIT_0_1_2_3_4);  // Independent mode
-    ADC4_CCR_REG |= WriteValue(2 , CKMODE_BIT_16_17 );   // Synchronous clock mode clk/2
+    ADC3_CCR_REG |= WriteValue(0x00, DUAL_BIT_0_1_2_3_4);  // Independent mode
+    ADC3_CCR_REG |= WriteValue(2 , CKMODE_BIT_16_17 );   // Synchronous clock mode clk/2
 }
 
 
@@ -350,26 +350,26 @@ void ADC_Enable(ADC_t adc)
 * Return value          : u16 - Converted ADC value
 *******************************************************************************************************************/
 
-u16  ADC_Read(ADC_t adc)
+void  ADC_Read(ADC_t adc , u16 *Read_Ptr)
 {
     u16 AdcRead ;
     switch (adc)
     {
         case ADC_1:
             /* code */
-                AdcRead  = ADC1_DR_REG;
+        	*Read_Ptr  = ADC1_DR_REG;
         break;
         case ADC_2:
             /* code */
-                AdcRead  = ADC2_DR_REG;
+        	*Read_Ptr = ADC2_DR_REG;
         break; 
         case ADC_3:
             /* code */
-                AdcRead  = ADC3_DR_REG;
+        	*Read_Ptr  = ADC3_DR_REG;
         break;
         case ADC_4:
             /* code */
-                AdcRead  = ADC4_DR_REG;
+        	*Read_Ptr  = ADC4_DR_REG;
         break;		
 
     }
