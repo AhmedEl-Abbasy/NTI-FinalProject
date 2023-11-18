@@ -1,0 +1,2 @@
+SCB.c:59:17:SCB_SetPriorityGroup	1
+SCB.c:84:17:SCB_GetPriorityGroup	2
