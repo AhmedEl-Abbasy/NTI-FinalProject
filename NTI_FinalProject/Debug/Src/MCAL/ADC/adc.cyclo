@@ -1,9 +1,0 @@
-adc.c:60:6:ADC1_Init	3
-adc.c:98:6:ADC2_Init	3
-adc.c:137:6:ADC3_Init	3
-adc.c:172:6:ADC4_Init	3
-adc.c:209:6:ADC_Start	5
-adc.c:247:17:ADC_CheckStatus	9
-adc.c:317:6:ADC_Enable	5
-adc.c:353:7:ADC_Read	5
-adc.c:391:6:ADC_Disable	5

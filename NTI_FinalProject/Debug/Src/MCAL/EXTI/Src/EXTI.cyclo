@@ -1,3 +1,0 @@
-EXTI.c:59:13:EXTI_SelectHandlerFnuc	17
-EXTI.c:125:17:EXTI_LineEnable	4
-EXTI.c:157:17:EXTI_LineDisable	1

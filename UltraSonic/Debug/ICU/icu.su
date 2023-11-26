@@ -1,0 +1,7 @@
+icu.c:16:6:TIM8_ICU_Enable	16	static
+icu.c:51:6:TIM8_ICU_SelectEdge	16	static
+icu.c:131:17:TIM8_ICU_INT_CheckStatus	24	static
+icu.c:193:6:TIM8_ICU_Read	16	static
+icu.c:217:6:TIM8_ICU_INT_Enable	16	static
+icu.c:255:6:TIM8_ICU_INT_Disable	16	static
+icu.c:277:6:TIM8_CC_IRQHandler	8	static

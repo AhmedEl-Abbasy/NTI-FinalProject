@@ -1,7 +1,0 @@
-NVIC.c:59:17:NVIC_EnableIRQ	1
-NVIC.c:78:17:NVIC_DisableIRQ	1
-NVIC.c:97:17:NVIC_SetPendingIRQ	1
-NVIC.c:116:17:NVIC_ClearPendingIRQ	1
-NVIC.c:135:17:NVIC_GetPendingIRQ	3
-NVIC.c:158:17:NVIC_SetPriority	1
-NVIC.c:177:17:NVIC_GetPriority	1

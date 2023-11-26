@@ -1,0 +1,4 @@
+ultrasonic.c:12:6:Ultrasonic_init	8	static
+ultrasonic.c:41:6:Ultrasonic_Trigger	8	static
+ultrasonic.c:55:5:Ultrasonic_readDistance	16	static
+ultrasonic.c:78:6:Ultrasonic_edgeProcessing	8	static
