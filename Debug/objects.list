@@ -6,5 +6,6 @@
 "Src/sysmem.o"
 "Startup/startup_stm32f303retx.o"
 "UltraSonic/ultrasonic.o"
+"UltraSonic/ultrasonic_cfg.o"
 "dio/dio.o"
 "systick/sysTick.o"

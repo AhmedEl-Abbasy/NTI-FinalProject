@@ -9,7 +9,12 @@ typedef enum
     channel_1,
     channel_2,
     channel_3,
-    channel_4
+    channel_4,
+	channel_5,
+	channel_6
+
+
+
 
 }ICU_Channel;
 
