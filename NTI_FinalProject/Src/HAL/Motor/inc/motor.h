@@ -10,6 +10,7 @@
 
 #include "std_types.h"
 #include "motor_types.h"
+#include <motor_cnfg.h>
 
 
 void DcMotor_Init(void);

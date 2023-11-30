@@ -1,0 +1,4 @@
+../Src/MCAL/systick/sysTick.c:12:6:SysTick_Handler	8	static
+../Src/MCAL/systick/sysTick.c:20:6:sysTick_init	16	static
+../Src/MCAL/systick/sysTick.c:35:6:sysTick_start	16	static
+../Src/MCAL/systick/sysTick.c:47:6:sysTick_stop	4	static

@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -10,13 +10,18 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Startup/subdir.mk
+-include Src/MCAL/systick/subdir.mk
 -include Src/MCAL/rcc/src/subdir.mk
 -include Src/MCAL/dio/src/subdir.mk
 -include Src/MCAL/SCB/Src/subdir.mk
+-include Src/MCAL/PWM/Src/subdir.mk
 -include Src/MCAL/NVIC/Src/subdir.mk
+-include Src/MCAL/ICU/Src/subdir.mk
 -include Src/MCAL/EXTI/Src/subdir.mk
--include Src/MCAL/ADC/subdir.mk
+-include Src/MCAL/ADC/Src/subdir.mk
+-include Src/HAL/UltraSonic/Src/subdir.mk
 -include Src/HAL/Motor/src/subdir.mk
+-include Src/HAL/BUTTON/Src/subdir.mk
 -include Src/subdir.mk
 -include objects.mk
 
@@ -66,8 +71,8 @@ all: main-build
 main-build: NTI_FinalProject.elf secondary-outputs
 
 # Tool invocations
-NTI_FinalProject.elf NTI_FinalProject.map: $(OBJS) $(USER_OBJS) C:\Users\Abelrahman\Desktop\NTI\ARM\NTI_FinalProject\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NTI_FinalProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Abelrahman\Desktop\NTI\ARM\NTI_FinalProject\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NTI_FinalProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+NTI_FinalProject.elf NTI_FinalProject.map: $(OBJS) $(USER_OBJS) E:\0_0\Courses\Embedded\ system\NTI-4M\Days\NTI-231130-H\final_project_\NTI-FinalProject\NTI_FinalProject\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "NTI_FinalProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\0_0\Courses\Embedded system\NTI-4M\Days\NTI-231130-H\final_project_\NTI-FinalProject\NTI_FinalProject\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NTI_FinalProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

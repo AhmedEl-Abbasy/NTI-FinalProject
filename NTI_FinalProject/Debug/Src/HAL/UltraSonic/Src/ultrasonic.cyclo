@@ -1,0 +1,4 @@
+../Src/HAL/UltraSonic/Src/ultrasonic.c:12:6:Ultrasonic_init	1
+../Src/HAL/UltraSonic/Src/ultrasonic.c:105:6:Ultrasonic_Trigger	1
+../Src/HAL/UltraSonic/Src/ultrasonic.c:120:5:Ultrasonic_readDistance	3
+../Src/HAL/UltraSonic/Src/ultrasonic.c:146:6:Ultrasonic_edgeProcessing	3

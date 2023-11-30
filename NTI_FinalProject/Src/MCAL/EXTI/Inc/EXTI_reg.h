@@ -31,7 +31,13 @@
 #define EXTI_FTSR2_REG 				(*(volatile u32*)(0x4001042C))
 #define EXTI_SWIER2_REG				(*(volatile u32*)(0x40010430))
 #define EXTI_PR2_REG				(*(volatile u32*)(0x40010434))
+//////
+#define SYSCFG_REG_BASE				(0x40010000)  					//page 249
+#define SYSCFG_REG0_OFFEST			(0x08)
+#define SYSCFG_REG4_OFFEST			(0x14)
 
+#define SYSCFG_EXTICR0				(*(volatile u32*)(SYSCFG_REG_BASE +SYSCFG_REG_OFFEST))  //page 249
+#define SYSCFG_EXTICR4				(*(volatile u32*)(SYSCFG_REG_BASE +SYSCFG_REG4_OFFEST))  //page 254
 
 /*******************************************************************************
  *                      Global Function Macros                                 *

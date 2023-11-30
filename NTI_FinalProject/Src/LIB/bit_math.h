@@ -26,8 +26,8 @@
 #define FLIP_BIT(REG,BIT_NO)			(REG ^=  (1<<BIT_NO))	/// Toggle a certain bit in any register 
 #define BIT_IS_SET(REG,BIT)				(REG & (1<<BIT))		/// Check if a specific bit is set in any register and return true if yes 
 #define BIT_IS_CLEAR(REG,BIT)			(!(REG & (1<<BIT)))		/// Check if a specific bit is cleared in any register and return true if yes 
-
-/*******************************************************************************
+#define WriteValue(value,BitOrder)        (u32)(value<<BitOrder)
+/****************alue,Bit***************************************************************
  *                      Global Data Types and Structures                       *
  *******************************************************************************/
 

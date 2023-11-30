@@ -9,6 +9,7 @@
 #define RCC_H_
 
 #include "rcc_types.h"
+#include "rcc_reg.h"
 #include "std_types.h"
 
 #define HSI_SW  (u8)(0<<0)

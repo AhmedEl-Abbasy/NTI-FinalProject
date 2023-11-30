@@ -99,6 +99,7 @@ static void EXTI_SelectHandlerFnuc(EXTI_Type *EXTI)
 	}
 	else if (EXTI->EXTIxSelect == EXTI_13){
 		EXTI_HandlerFunc13 = EXTI->EXTI_CallBackFunc;
+		EXTI_HandlerFunc13();
 	}
 	else if (EXTI->EXTIxSelect == EXTI_14){
 		EXTI_HandlerFunc14 = EXTI->EXTI_CallBackFunc;

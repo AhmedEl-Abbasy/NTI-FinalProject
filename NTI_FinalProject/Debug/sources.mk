@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 ELF_SRCS := 
@@ -22,13 +22,18 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Src/HAL/BUTTON/Src \
 Src/HAL/Motor/src \
-Src/MCAL/ADC \
+Src/HAL/UltraSonic/Src \
+Src/MCAL/ADC/Src \
 Src/MCAL/EXTI/Src \
+Src/MCAL/ICU/Src \
 Src/MCAL/NVIC/Src \
+Src/MCAL/PWM/Src \
 Src/MCAL/SCB/Src \
 Src/MCAL/dio/src \
 Src/MCAL/rcc/src \
+Src/MCAL/systick \
 Src \
 Startup \
 
