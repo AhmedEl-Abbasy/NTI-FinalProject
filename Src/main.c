@@ -32,27 +32,41 @@ int main(void)
 	rcc_setSystemClk(HSI);
 	rcc_enablePeriClk(APB2,TIM8_EN);
 	rcc_enablePeriClk(APB2,TIM1_EN);
+	rcc_enablePeriClk(APB1,TIM2_EN);
+
 
 	rcc_enablePeriClk(AHB,IOPA_EN);
 	rcc_enablePeriClk(AHB,IOPB_EN);
 	rcc_enablePeriClk(AHB,IOPC_EN);
 
 
-	sysTick_init(AHB_8,NULLPTR);
+	sysTick_init(AHB_8,(void*)RET_NULLPTR);
 
 
 	Ultrasonic_init();
 
+
+
+
     /* Loop forever */
 	for(;;)
 	{
-		Ultrasonic_Trigger( TRIGGER4_PORT , TRIGGER4_PIN , UltraSonic_Channel4 );
-		read1 = Ultrasonic_readDistance();
-		sysTick_start(500000);
+//		Ultrasonic_Trigger( TRIGGER4_PORT , TRIGGER4_PIN , UltraSonic_Channel4 );
+//		read1 = Ultrasonic_readDistance();
+//		sysTick_start(500000);
+//
+//		Ultrasonic_Trigger( TRIGGER1_PORT , TRIGGER1_PIN , UltraSonic_Channel1 );
+//		read2 = Ultrasonic_readDistance();
+//		sysTick_start(500000);
 
-		Ultrasonic_Trigger( TRIGGER1_PORT , TRIGGER1_PIN , UltraSonic_Channel1 );
-		read2 = Ultrasonic_readDistance();
-		sysTick_start(500000);
+		if(read1 !=0)
+		{
+
+		}
+		if(read2 !=0)
+		{
+
+		}
 
 	}
 }

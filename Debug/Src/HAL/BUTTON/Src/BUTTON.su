@@ -1,0 +1,2 @@
+BUTTON.c:61:17:BUTTON_init	16	static
+BUTTON.c:90:17:BUTTON_getStatus	24	static

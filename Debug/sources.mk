@@ -19,12 +19,18 @@ OBJCOPY_BIN :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-ICU \
-NVIC/Src \
-RCC \
+Src/HAL/BUTTON/Src \
+Src/HAL/Motor/src \
+Src/HAL/UltraSonic/Src \
+Src/MCAL/ADC/Src \
+Src/MCAL/EXTI/Src \
+Src/MCAL/ICU/Src \
+Src/MCAL/NVIC/Src \
+Src/MCAL/PWM/Src \
+Src/MCAL/SCB/Src \
+Src/MCAL/dio/src \
+Src/MCAL/rcc/src \
+Src/MCAL/systick \
 Src \
 Startup \
-UltraSonic \
-dio \
-systick \
 

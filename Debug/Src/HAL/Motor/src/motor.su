@@ -1,0 +1,2 @@
+motor.c:13:6:DcMotor_Init	8	static
+motor.c:21:6:DcMotor_Rotate	16	static
