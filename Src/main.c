@@ -54,6 +54,12 @@ int main(void)
 	PWM_Init();
 	PWM_Start(channel1, 0);
 	read1 = 1;
+	PWM_Start(channel1, 20);
+	read1 = 1;
+	PWM_Start(channel1, 50);
+	read1 = 1;
+	PWM_Start(channel1, 75);
+	read1 = 1;
 	PWM_Start(channel1, 100);
 	read1 = 1;
 
