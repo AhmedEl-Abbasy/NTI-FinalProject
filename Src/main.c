@@ -25,6 +25,7 @@
 #include "icu.h"
 #include "sysTick.h"
 #include "ultrasonic.h"
+#include "pwm.h"
 
 int main(void)
 {
@@ -43,9 +44,18 @@ int main(void)
 	sysTick_init(AHB_8,(void*)RET_NULLPTR);
 
 
-	Ultrasonic_init();
+	//Ultrasonic_init();
 
+	// A0 F1, A15 F1 , A5 F1
 
+	DIO_setupPinMode( PORTA_ID ,PIN0_ID , PIN_ALTERNATE );
+	DIO_setAlternateFunction(PORTA_ID ,PIN0_ID , AF1 );
+
+	PWM_Init();
+	PWM_Start(channel1, 0);
+	read1 = 1;
+	PWM_Start(channel1, 100);
+	read1 = 1;
 
 
     /* Loop forever */
