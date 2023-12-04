@@ -71,8 +71,8 @@ all: main-build
 main-build: NTI_FinalProject.elf secondary-outputs
 
 # Tool invocations
-NTI_FinalProject.elf NTI_FinalProject.map: $(OBJS) $(USER_OBJS) E:\0_0\Courses\Embedded\ system\NTI-4M\Days\NTI-231130-H\final_project_\NTI-FinalProject\NTI_FinalProject\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NTI_FinalProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\0_0\Courses\Embedded system\NTI-4M\Days\NTI-231130-H\final_project_\NTI-FinalProject\NTI_FinalProject\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NTI_FinalProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+NTI_FinalProject.elf NTI_FinalProject.map: $(OBJS) $(USER_OBJS) E:\0_0\Courses\Embedded\ system\NTI-4M\Days\NTI-231204-H\NTI-FinalProject\NTI_FinalProject\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "NTI_FinalProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\0_0\Courses\Embedded system\NTI-4M\Days\NTI-231204-H\NTI-FinalProject\NTI_FinalProject\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NTI_FinalProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

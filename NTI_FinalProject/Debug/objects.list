@@ -6,7 +6,7 @@
 "./Src/MCAL/EXTI/Src/EXTI.o"
 "./Src/MCAL/ICU/Src/icu.o"
 "./Src/MCAL/NVIC/Src/NVIC.o"
-"./Src/MCAL/PWM/Src/PWM_INTERFACE.o"
+"./Src/MCAL/PWM/Src/pwm.o"
 "./Src/MCAL/SCB/Src/SCB.o"
 "./Src/MCAL/dio/src/dio.o"
 "./Src/MCAL/rcc/src/rcc.o"
