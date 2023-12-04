@@ -12,11 +12,13 @@ Src/main.o: ../Src/main.c \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/ICU/Inc/icu.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/ICU/Inc/icu_reg.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/ICU/Inc/icu_types.h \
+ E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/Tim6/TIM6.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick_reg.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/HAL/UltraSonic/Inc/ultrasonic.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/PWM/Inc/pwm.h \
- E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/PWM/Inc/pwm_reg.h
+ E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/PWM/Inc/pwm_reg.h \
+ E:/WS/NTI_4M/Final_Project/Project/Src/Services/FreeRTOS/FreeRTOSConfig.h
 
 E:/WS/NTI_4M/Final_Project/Project/Src/LIB/bit_math.h:
 
@@ -44,6 +46,8 @@ E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/ICU/Inc/icu_reg.h:
 
 E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/ICU/Inc/icu_types.h:
 
+E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/Tim6/TIM6.h:
+
 E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick.h:
 
 E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick_reg.h:
@@ -53,3 +57,5 @@ E:/WS/NTI_4M/Final_Project/Project/Src/HAL/UltraSonic/Inc/ultrasonic.h:
 E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/PWM/Inc/pwm.h:
 
 E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/PWM/Inc/pwm_reg.h:
+
+E:/WS/NTI_4M/Final_Project/Project/Src/Services/FreeRTOS/FreeRTOSConfig.h:

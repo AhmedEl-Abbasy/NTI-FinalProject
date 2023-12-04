@@ -97,7 +97,6 @@ void Ultrasonic_init(void)
 
 }
 
-
 /*
  *  Description: Send the trigger pulse to the ultrasonic
  */
@@ -108,11 +107,16 @@ void Ultrasonic_Trigger(DIO_PortID port , DIO_PinID pin , u8 Channel )
 	ICU_Control(UltraSonic_Channel , Enable);
 
 	DIO_writePin( port ,  pin , LOGIC_HIGH );
-	sysTick_start(10);
+	TIM6_Delay(10);
 	DIO_writePin( port ,  pin , LOGIC_LOW );
 
 }
 
+// case 1
+// case : triger
+// delay = 4
+// case : read = 1;
+// delay = 1;
 
 /*
  * Description: Does the distance measurements and return with the distance

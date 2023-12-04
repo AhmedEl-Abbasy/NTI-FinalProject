@@ -8,7 +8,8 @@
 #include "dio.h"
 #include "icu.h"
 #include "NVIC.h"
-#include "sysTick.h"
+#include "TIM6.h"
+//#include "sysTick.h"
 /*******************************************************************************
  *                                Definitions                                  *
  *******************************************************************************/
@@ -21,13 +22,13 @@
 // Channel 1 =============>>>>>          PC6 => AF4 , PA15 => AF2 , PB6 => AF5
 // Channel 2 =============>>>>>          PC7 => AF4 , PA14 => AF5 , PB8 => AF10
 // Channel 3 =============>>>>>          PC8 => AF4 , PB9 => AF10
-// Channel 4 =============>>>>>          PC9 => AF4
 
 
-/***************  Tim15        *****************/
+/***************  Tim1        *****************/
 
-// Channel 5 =============>>>>>          PB14=>AF1, PA2=>AF9
-// Channel 6 =============>>>>>          PB15=>AF1, PA3=>AF9
+// Channel 4 =============>>>>>          PA8=>AF6  ,  PC0=>AF2
+// Channel 5 =============>>>>>          PA9=>AF6  ,  PC1=>AF2
+// Channel 6 =============>>>>>          PA10=>AF6 ,  PC2=>AF2
 
 
 
@@ -52,7 +53,7 @@
 
 
 #define TRIGGER2_PORT      		  PORTA_ID
-#define TRIGGER2_PIN       		  PIN2_ID
+#define TRIGGER2_PIN       		  PIN1_ID
 
 #define ECHO2_PORT         		  PORTC_ID
 #define ECHO2_PIN          		  PIN7_ID
@@ -80,8 +81,8 @@
 /*************************    Channel   4    *************************************/
 
 
-#define TRIGGER4_PORT             PORTA_ID
-#define TRIGGER4_PIN              PIN1_ID
+#define TRIGGER4_PORT             PORTB_ID
+#define TRIGGER4_PIN              PIN0_ID
 
 #define ECHO4_PORT                PORTC_ID
 #define ECHO4_PIN                 PIN0_ID
@@ -95,7 +96,7 @@
 /*************************    Channel   5    *************************************/
 
 
-#define TRIGGER5_PORT            PORTA_ID
+#define TRIGGER5_PORT            PORTF_ID
 #define TRIGGER5_PIN             PIN1_ID
 
 #define ECHO5_PORT               PORTC_ID
@@ -111,7 +112,7 @@
 /*************************    Channel   6    *************************************/
 
 
-#define TRIGGER6_PORT           PORTA_ID
+#define TRIGGER6_PORT           PORTF_ID
 #define TRIGGER6_PIN            PIN1_ID
 
 #define ECHO6_PORT              PORTC_ID

@@ -23,63 +23,110 @@
 #include "NVIC.h"
 #include "dio.h"
 #include "icu.h"
+#include "TIM6.h"
 #include "sysTick.h"
 #include "ultrasonic.h"
 #include "pwm.h"
+#include "FreeRTOSConfig.h"
 
 int main(void)
 {
-	u16 read1,read2;
+	u16 read1,read2,read3,read4,read5,read6;
 	rcc_setSystemClk(HSI);
 	rcc_enablePeriClk(APB2,TIM8_EN);
 	rcc_enablePeriClk(APB2,TIM1_EN);
 	rcc_enablePeriClk(APB1,TIM2_EN);
+	rcc_enablePeriClk(APB1,TIM6_EN);
 
 
 	rcc_enablePeriClk(AHB,IOPA_EN);
 	rcc_enablePeriClk(AHB,IOPB_EN);
 	rcc_enablePeriClk(AHB,IOPC_EN);
+	rcc_enablePeriClk(AHB,IOPF_EN);
 
+
+	DIO_setupPinMode( PORTA_ID , PIN5_ID , PIN_OUTPUT );
+	DIO_writePin( PORTA_ID , PIN5_ID , LOGIC_LOW );
 
 	sysTick_init(AHB_8,(void*)RET_NULLPTR);
 
 
-	//Ultrasonic_init();
+	Ultrasonic_init();
 
 	// A0 F1, A15 F1 , A5 F1
 
-	DIO_setupPinMode( PORTA_ID ,PIN0_ID , PIN_ALTERNATE );
-	DIO_setAlternateFunction(PORTA_ID ,PIN0_ID , AF1 );
+//	DIO_setupPinMode( PORTA_ID ,PIN0_ID , PIN_ALTERNATE );
+//	DIO_setAlternateFunction(PORTA_ID ,PIN0_ID , AF1 );
 
-	PWM_Init();
-	PWM_Start(channel1, 0);
-	read1 = 1;
-	PWM_Start(channel1, 20);
-	read1 = 1;
-	PWM_Start(channel1, 50);
-	read1 = 1;
-	PWM_Start(channel1, 75);
-	read1 = 1;
-	PWM_Start(channel1, 100);
-	read1 = 1;
+//	PWM_Init();
+//	PWM_Start(channel1, 0);
+//	read1 = 1;
+//	PWM_Start(channel1, 20);
+//	read1 = 1;
+//	PWM_Start(channel1, 50);
+//	read1 = 1;
+//	PWM_Start(channel1, 75);
+//	read1 = 1;
+//	PWM_Start(channel1, 100);
+//	read1 = 1;
 
-
+	TIM6_Init(7);
     /* Loop forever */
 	for(;;)
 	{
-//		Ultrasonic_Trigger( TRIGGER4_PORT , TRIGGER4_PIN , UltraSonic_Channel4 );
-//		read1 = Ultrasonic_readDistance();
-//		sysTick_start(500000);
-//
-//		Ultrasonic_Trigger( TRIGGER1_PORT , TRIGGER1_PIN , UltraSonic_Channel1 );
+
+
+//		DIO_togglePin( PORTA_ID , PIN5_ID );
+//		TIM6_Delay(5000);
+
+		Ultrasonic_Trigger( TRIGGER1_PORT , TRIGGER1_PIN , UltraSonic_Channel1 );
+		read1 = Ultrasonic_readDistance();
+		sysTick_start(500000);
+		//sysTick_start(500000);
+
+//		Ultrasonic_Trigger( TRIGGER2_PORT , TRIGGER2_PIN , UltraSonic_Channel2 );
 //		read2 = Ultrasonic_readDistance();
 //		sysTick_start(500000);
+//
+//		Ultrasonic_Trigger( TRIGGER3_PORT , TRIGGER3_PIN , UltraSonic_Channel3 );
+//		read3 = Ultrasonic_readDistance();
+//		sysTick_start(500000);
+//
+//		Ultrasonic_Trigger( TRIGGER4_PORT , TRIGGER4_PIN , UltraSonic_Channel4 );
+//		read4 = Ultrasonic_readDistance();
+//		sysTick_start(500000);
+//
+//		Ultrasonic_Trigger( TRIGGER5_PORT , TRIGGER5_PIN , UltraSonic_Channel5 );
+//		read5 = Ultrasonic_readDistance();
+//		sysTick_start(500000);
+//
+//		Ultrasonic_Trigger( TRIGGER6_PORT , TRIGGER6_PIN , UltraSonic_Channel6 );
+//		read6 = Ultrasonic_readDistance();
+//		sysTick_start(500000);
+
+
 
 		if(read1 !=0)
 		{
 
 		}
 		if(read2 !=0)
+		{
+
+		}
+		if(read3 !=0)
+		{
+
+		}
+		if(read4 !=0)
+		{
+
+		}
+		if(read5 !=0)
+		{
+
+		}
+		if(read6 !=0)
 		{
 
 		}

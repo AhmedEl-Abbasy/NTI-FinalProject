@@ -28,9 +28,13 @@ Src/MCAL/ICU/Src \
 Src/MCAL/NVIC/Src \
 Src/MCAL/PWM/Src \
 Src/MCAL/SCB/Src \
+Src/MCAL/Tim6 \
 Src/MCAL/dio/src \
 Src/MCAL/rcc/src \
 Src/MCAL/systick \
+Src/Services/FreeRTOS/Source \
+Src/Services/FreeRTOS/Source/portable/GCC/ARM_CM4F \
+Src/Services/FreeRTOS/Source/portable/MemMang \
 Src \
 Startup \
 

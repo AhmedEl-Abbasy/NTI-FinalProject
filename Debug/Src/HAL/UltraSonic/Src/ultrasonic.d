@@ -14,8 +14,7 @@ Src/HAL/UltraSonic/Src/ultrasonic.o: \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/ICU/Inc/icu_types.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/NVIC/Inc/NVIC.h \
  E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/NVIC/Inc/NVIC_reg.h \
- E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick.h \
- E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick_reg.h
+ E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/Tim6/TIM6.h
 
 E:/WS/NTI_4M/Final_Project/Project/Src/HAL/UltraSonic/Inc/ultrasonic.h:
 
@@ -45,6 +44,4 @@ E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/NVIC/Inc/NVIC.h:
 
 E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/NVIC/Inc/NVIC_reg.h:
 
-E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick.h:
-
-E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/systick/sysTick_reg.h:
+E:/WS/NTI_4M/Final_Project/Project/Src/MCAL/Tim6/TIM6.h:

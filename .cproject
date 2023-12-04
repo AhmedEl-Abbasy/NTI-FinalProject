@@ -24,8 +24,8 @@
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.1647295980" name="Floating-point ABI" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.value.hard" valueType="enumerated"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.667248245" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="NUCLEO-F303RE" valueType="string"/>
 							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.1467380983" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || NUCLEO-F303RE || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Inc ||  ||  || STM32 | STM32F3 | STM32F303RETx | NUCLEO_F303RE ||  || Src | Startup | Inc ||  ||  || ${workspace_loc:/${ProjName}/STM32F303RETX_FLASH.ld} || true || NonSecure ||  ||  ||  || None ||  ||  || " valueType="string"/>
-							<option id="com.st.stm32cube.ide.mcu.option.internal.toolchain.type.1678058416" superClass="com.st.stm32cube.ide.mcu.option.internal.toolchain.type" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32" valueType="string"/>
-							<option id="com.st.stm32cube.ide.mcu.option.internal.toolchain.version.1678896469" superClass="com.st.stm32cube.ide.mcu.option.internal.toolchain.version" value="7-2018-q2-update" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.option.internal.toolchain.type.1678058416" name="Internal Toolchain Type" superClass="com.st.stm32cube.ide.mcu.option.internal.toolchain.type" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.option.internal.toolchain.version.1678896469" name="Internal Toolchain Version" superClass="com.st.stm32cube.ide.mcu.option.internal.toolchain.version" value="7-2018-q2-update" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.15859464" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
 							<builder buildPath="${workspace_loc:/NTI_FinalProject}/Debug" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.1903406465" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.1126637191" name="MCU GCC Assembler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler">
@@ -55,11 +55,16 @@
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\MCAL\ADC\Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\MCAL\EXTI\Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\MCAL\ICU\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\MCAL\Tim6&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\MCAL\PWM\Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\MCAL\SCB\Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\HAL\BUTTON\Inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\HAL\Motor\inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\HAL\UltraSonic\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\Services\FreeRTOS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\Services\FreeRTOS\Source\portable\GCC\ARM_CM4F&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\Services\FreeRTOS\Source\portable\MemMang&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\WS\NTI_4M\Final_Project\Project\Src\Services\FreeRTOS\Source\include&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.2123477577" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -86,9 +91,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -160,9 +165,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Startup"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
