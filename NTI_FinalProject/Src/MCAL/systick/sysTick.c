@@ -8,14 +8,14 @@
 
 
 static volatile void(*g_callBackPtr)(void) = (void*)RET_NULLPTR;
-
+/*
 void SysTick_Handler (void)
 {
 	if(g_callBackPtr != (void*)RET_NULLPTR)
 	{
 		(*g_callBackPtr)();
 	}
-}
+}*/
 
 void sysTick_init(systick_clock_t clock, void (*fPtr)(void))
 {
