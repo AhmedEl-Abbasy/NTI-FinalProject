@@ -11,9 +11,9 @@
 #include "dio.h"
 
 
-#define MotorPortID PORTB_ID
-#define MootorPin1 PIN0_ID
-#define MootorPin2 PIN1_ID
+#define MotorPortID			 PORTB_ID
+#define MootorPin1 			 PIN0_ID
+#define MootorPin2 			 PIN1_ID
 
 
 #endif /* HAL_MOTOR_INC_MOTOR_CNFG_H_ */

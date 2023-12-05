@@ -26,6 +26,7 @@ RM := rm -rf
 -include Src/HAL/UltraSonic/Src/subdir.mk
 -include Src/HAL/Motor/src/subdir.mk
 -include Src/HAL/BUTTON/Src/subdir.mk
+-include Src/Application/motor/subdir.mk
 -include Src/subdir.mk
 -include objects.mk
 

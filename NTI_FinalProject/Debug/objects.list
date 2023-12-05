@@ -1,3 +1,4 @@
+"./Src/Application/motor/Motor_Task.o"
 "./Src/HAL/BUTTON/Src/BUTTON.o"
 "./Src/HAL/Motor/src/motor.o"
 "./Src/HAL/UltraSonic/Src/ultrasonic.o"

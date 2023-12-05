@@ -22,6 +22,7 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Src/Application/motor \
 Src/HAL/BUTTON/Src \
 Src/HAL/Motor/src \
 Src/HAL/UltraSonic/Src \
