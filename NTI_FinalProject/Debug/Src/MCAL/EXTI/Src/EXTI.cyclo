@@ -1,3 +1,0 @@
-../Src/MCAL/EXTI/Src/EXTI.c:59:13:EXTI_SelectHandlerFnuc	17
-../Src/MCAL/EXTI/Src/EXTI.c:126:17:EXTI_LineEnable	4
-../Src/MCAL/EXTI/Src/EXTI.c:158:17:EXTI_LineDisable	1

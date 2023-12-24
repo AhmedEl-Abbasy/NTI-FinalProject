@@ -1,2 +1,0 @@
-../Src/MCAL/SCB/Src/SCB.c:59:17:SCB_SetPriorityGroup	1
-../Src/MCAL/SCB/Src/SCB.c:84:17:SCB_GetPriorityGroup	2

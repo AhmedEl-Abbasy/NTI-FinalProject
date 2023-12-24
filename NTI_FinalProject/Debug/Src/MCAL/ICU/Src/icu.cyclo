@@ -1,9 +1,0 @@
-../Src/MCAL/ICU/Src/icu.c:18:6:ICU_Init	1
-../Src/MCAL/ICU/Src/icu.c:83:6:ICU_Control	5
-../Src/MCAL/ICU/Src/icu.c:118:6:ICU_SelectEdge	19
-../Src/MCAL/ICU/Src/icu.c:231:17:ICU_INT_CheckStatus	13
-../Src/MCAL/ICU/Src/icu.c:316:6:ICU_Read	7
-../Src/MCAL/ICU/Src/icu.c:344:6:ICU_INT_Enable	13
-../Src/MCAL/ICU/Src/icu.c:397:6:ICU_INT_Disable	7
-../Src/MCAL/ICU/Src/icu.c:426:6:TIM8_CC_IRQHandler	7
-../Src/MCAL/ICU/Src/icu.c:459:6:TIM1_CC_IRQHandler	7

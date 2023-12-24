@@ -1,9 +1,0 @@
-../Src/MCAL/ADC/Src/adc.c:60:6:ADC1_Init	16	static
-../Src/MCAL/ADC/Src/adc.c:98:6:ADC2_Init	16	static
-../Src/MCAL/ADC/Src/adc.c:137:6:ADC3_Init	16	static
-../Src/MCAL/ADC/Src/adc.c:172:6:ADC4_Init	16	static
-../Src/MCAL/ADC/Src/adc.c:209:6:ADC_Start	16	static
-../Src/MCAL/ADC/Src/adc.c:247:17:ADC_CheckStatus	24	static
-../Src/MCAL/ADC/Src/adc.c:317:6:ADC_Enable	16	static
-../Src/MCAL/ADC/Src/adc.c:353:7:ADC_Read	16	static
-../Src/MCAL/ADC/Src/adc.c:389:6:ADC_Disable	16	static
